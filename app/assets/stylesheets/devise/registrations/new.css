@@ -1,0 +1,24 @@
+.all{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field{
+  animation-name: smoothAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  transform-origin: left;
+  opacity:0;
+}
+
+@keyframes smoothAnime{
+  from {
+    transform: translate3d(0, 100%, 0) skewY(12deg);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0) skewY(0);
+    opacity: 1;
+  }
+}
